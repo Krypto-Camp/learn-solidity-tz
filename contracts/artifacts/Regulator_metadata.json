@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.11+commit.d7f03943"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "checkValue",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "loan",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/tutorial_2_inheritance.sol": "Regulator"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/tutorial_2_inheritance.sol": {
+			"keccak256": "0x38bb3487f70814d94db7fc1b0962830d77f8706f7dd19f714331da588635ad72",
+			"urls": [
+				"bzz-raw://f90babd28b1c0ccbbe11bfac13e1c9aab3743f4de70f4ab91e5e2a241ca84beb",
+				"dweb:/ipfs/QmVHK7REqJCpCCq58t9MftNyLwwVN98jKbBwHYUZNE2WyC"
+			]
+		}
+	},
+	"version": 1
+}
