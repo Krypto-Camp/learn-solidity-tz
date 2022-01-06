@@ -6,16 +6,23 @@ interface Regulator {
 }
 contract Bank is Regulator {
   uint private saving;
+  address private owner;
+
+  modifier ownerFunc {
+    require(owner == msg.sender); // require, revert, assert
+    _; // 接下來要執行的 function
+  }
 
   constructor(uint amount) {
     saving = amount;
+    owner = msg.sender;
   }
 
-  function deposit(uint amount) public {
+  function deposit(uint amount) public ownerFunc {
     saving +=amount;
   }
 
-  function withdraw(uint amount) public {
+  function withdraw(uint amount) public ownerFunc {
     if (checkSaving((amount))) {
      saving -=amount;
     }
