@@ -1,10 +1,10 @@
 pragma solidity ^0.8.10;
 
-interface Regulator {
+interface Regulator2 {
   function checkSaving(uint amount) external returns (bool);
   function loan() external returns (bool);
 }
-contract Bank is Regulator {
+contract Bank2 is Regulator2 {
   uint private saving;
   address private owner;
 
@@ -40,7 +40,7 @@ contract Bank is Regulator {
     return saving > 0;
   }
 }
-contract tutorial_3_modifiers_and_error_handle is Bank(10) {
+contract tutorial_3_modifiers_and_error_handle is Bank2(10) {
   string private name;
   uint private age;
 
